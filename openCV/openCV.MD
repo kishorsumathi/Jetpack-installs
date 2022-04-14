@@ -179,6 +179,10 @@ $ python3 -c 'import cv2 as cv; print("openCV version:",cv.__version__,"CudaEnab
 $ make clean
 $ sudo apt-get update
 ```
+#### Goto home directory
+```
+$ cd $HOME
+```
 
 #### Remove build stuff
 ```
