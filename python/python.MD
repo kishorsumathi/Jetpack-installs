@@ -62,10 +62,6 @@ $ sudo rm -r Python-3.9.12 && rm Python-3.9.12.tgz
 
 Right now if you or some script tries to use python3 from the command line it will default to the version that came with jetpack. This is fine if you want to call your altinstall of python every time with ***python3.9*** or the version you installed.
 
-Also pip3 will also default to the jetpack version of python3.
-```
-$ pip3 --version
-```
 To avoid this you can call pip from python3.9 like so.
 ```
 $ python3.9 -m pip --version
