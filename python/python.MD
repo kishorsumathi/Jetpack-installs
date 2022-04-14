@@ -107,10 +107,6 @@ However ***Best Practace*** if using pip is to always use python -m to use pip f
 ```
 $ python3.9 -m pip --version
 ```
-# Upgrade and or install all pip version for python3.9
-If you have used a diffrent version change ***Python-3.9.12*** and ***Python-3.9.12.tgz*** to the version you downloaded
-```
-$ sudo -H python3.9 -m pip install --upgrade pip
-```
+
 
 ###### END OF DOCUMENT
