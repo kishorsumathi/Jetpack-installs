@@ -186,8 +186,8 @@ $ cd $HOME
 
 #### Remove build stuff
 ```
-$ sudo rm -rf ~/opencv
-$ sudo rm -rf ~/opencv_contrib
+$ sudo rm -rf opencv
+$ sudo rm -rf opencv_contrib
 ```
 #### Remove the dphys-swapfile now
 Note: if your going to be building other stuff like Torch or TorchVision leave the swap your going to need it.
