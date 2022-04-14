@@ -20,25 +20,25 @@ $ sudo -H python3.9 -m pip install --upgrade pip
 ```
 The rest of the dependencies can be installed with apt.
 ```
-$ sudo apt install build-essential cmake git unzip pkg-config zlib1g-dev /
-libjpeg-dev libjpeg8-dev libjpeg-turbo8-dev /
-libpng-dev libtiff-dev libglew-dev /
-libavcodec-dev libavformat-dev libswscale-dev /
-libgtk2.0-dev libgtk-3-dev libcanberra-gtk* /
-python-dev python-numpy python-pip /
-python3-dev python3-numpy python3-pip /
-libxvidcore-dev libx264-dev libgtk-3-dev /
-libtbb2 libtbb-dev libdc1394-22-dev libxine2-dev /
-gstreamer1.0-tools libgstreamer-plugins-base1.0-dev /
-libgstreamer-plugins-good1.0-dev /
-libv4l-dev v4l-utils v4l2ucp qv4l2 /
-libtesseract-dev libxine2-dev libpostproc-dev /
-libavresample-dev libvorbis-dev /
-libfaac-dev libmp3lame-dev libtheora-dev /
-libopencore-amrnb-dev libopencore-amrwb-dev /
-libopenblas-dev libatlas-base-dev libblas-dev /
-liblapack-dev liblapacke-dev libeigen3-dev gfortran /
-libhdf5-dev libprotobuf-dev protobuf-compiler /
+$ sudo apt install build-essential cmake git unzip pkg-config zlib1g-dev \
+libjpeg-dev libjpeg8-dev libjpeg-turbo8-dev \
+libpng-dev libtiff-dev libglew-dev \
+libavcodec-dev libavformat-dev libswscale-dev \
+libgtk2.0-dev libgtk-3-dev libcanberra-gtk* \
+python-dev python-numpy python-pip \
+python3-dev python3-numpy python3-pip \
+libxvidcore-dev libx264-dev libgtk-3-dev \
+libtbb2 libtbb-dev libdc1394-22-dev libxine2-dev \
+gstreamer1.0-tools libgstreamer-plugins-base1.0-dev \
+libgstreamer-plugins-good1.0-dev \
+libv4l-dev v4l-utils v4l2ucp qv4l2 \
+libtesseract-dev libxine2-dev libpostproc-dev \
+libavresample-dev libvorbis-dev \
+libfaac-dev libmp3lame-dev libtheora-dev \
+libopencore-amrnb-dev libopencore-amrwb-dev \
+libopenblas-dev libatlas-base-dev libblas-dev \
+liblapack-dev liblapacke-dev libeigen3-dev gfortran \
+libhdf5-dev libprotobuf-dev protobuf-compiler \
 libgoogle-glog-dev libgflags-dev -y
 ```
 
