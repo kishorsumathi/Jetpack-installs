@@ -4,6 +4,21 @@
 ```
 $ sudo apt update
 ```
+#### install pip and pip3 for jetpack's python(s)
+Do it now. As if its not installed it will break native pip for jetpack
+```
+sudo apt-get install python-pip python3-pip -y
+```
+test install
+```
+$ python2 -m pip --version
+$ python3 -m pip --version
+```
+upgrade them while were here
+```
+$ sudo -H python -m pip install --upgrade pip
+$ sudo -H python3 -m pip install --upgrade pip
+```
 #### Install dependencies
 ```
 $ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev -y
@@ -15,7 +30,7 @@ $ cd $HOME
 #### Download Python
 Copy the url to the python version you want to install ---> https://www.python.org/downloads/source/
 
-I will be using Python3.9.12 for this guide. Change the link to the version you want if diffrent
+I will be using Python3.9.12 for this guide. Change the link to the version you want if different
 ```
 $ wget https://www.python.org/ftp/python/3.9.12/Python-3.9.12.tgz
 ```
@@ -78,8 +93,9 @@ $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/pyt
 Note: if you messed up and need to remove an alturnative ***$ sudo update-alternatives --remove python3 /usr/local/bin/python3.9***
 
 #### configure (select the one you want to have priority, make it auto)
+```
 $ sudo update-alternatives --config python3
-
+```
 Now check that python3 is working with python3.9
 
 It should show the version you installed
