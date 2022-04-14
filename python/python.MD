@@ -52,7 +52,7 @@ Go back to home dir
 ```
 $ cd $HOME
 ```
-If you have used a diffrent version change ***Python-3.9.12*** and ***Python-3.9.12.tgz*** to the version you download
+If you have used a diffrent version change ***Python-3.9.12*** and ***Python-3.9.12.tgz*** to the version you downloaded
 ```
 $ sudo rm -r Python-3.9.12 && rm Python-3.9.12.tgz
 ```
@@ -80,19 +80,20 @@ Note: if you messed up and need to remove an alturnative ***$ sudo update-altern
 #### configure (select the one you want to have priority, make it auto)
 $ sudo update-alternatives --config python3
 
-Now check that pip3 version is working with python3.9 as build scripts can call on pip3, its BAD but it happens.
+Now check that python3 is working with python3.9
+
+It should show the version you installed
 ```
-$ pip3 --version
+$ python3 --version
 ```
 
-However ***Best Practace*** is to always use python -m to use pip for that python version
+However ***Best Practace*** if using pip is to always use python -m to use pip for that python version
 ```
 $ python3.9 -m pip --version
 ```
-# Upgrade all pip versions
+# Upgrade and or install all pip version for python3.9
+If you have used a diffrent version change ***Python-3.9.12*** and ***Python-3.9.12.tgz*** to the version you downloaded
 ```
-$ python -m pip install --upgrade pip
-$ python3.6 -m pip install --upgrade pip
 $ python3.9 -m pip install --upgrade pip
 ```
 
