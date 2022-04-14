@@ -20,7 +20,7 @@ $ sudo -H python3.9 -m pip install --upgrade pip
 ```
 The rest of the dependencies can be installed with apt.
 ```
-$ $ sudo apt install build-essential cmake git unzip pkg-config zlib1g-dev /
+$ sudo apt install build-essential cmake git unzip pkg-config zlib1g-dev /
 libjpeg-dev libjpeg8-dev libjpeg-turbo8-dev /
 libpng-dev libtiff-dev libglew-dev /
 libavcodec-dev libavformat-dev libswscale-dev /
