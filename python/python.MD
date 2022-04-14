@@ -48,6 +48,10 @@ python3.9 -c 'import sys; print(sys.version)'
 ```
 
 #### Clean up after install
+Go back to home dir
+```
+$ cd $HOME
+```
 If you have used a diffrent version change ***Python-3.9.12*** and ***Python-3.9.12.tgz*** to the version you download
 ```
 $ sudo rm -r Python-3.9.12 && rm Python-3.9.12.tgz
