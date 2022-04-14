@@ -169,16 +169,17 @@ sudo -H make install
 ```
 $ sudo ldconfig
 ```
+#### Test that it installed
+Make sure to use the correct python3 command if you have installed to a diffrent version of python.
+```
+$ python3 -c 'import cv2 as cv; print("openCV version:",cv.__version__,"CudaEnabledDeviceCount",cv.cuda.getCudaEnabledDeviceCount())'
+```
 #### cleaning (frees 300 MB)
 ```
 $ make clean
 $ sudo apt-get update
 ```
-#### Test that it installed
-Make sure to use the correct python3 command if you have installed to a diffrent version of python.
-```
-$ python3 -c 'import cv2 as cv; print(cv.__version__)'
-```
+
 #### Remove build stuff
 ```
 $ sudo rm -rf ~/opencv
