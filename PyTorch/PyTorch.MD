@@ -149,11 +149,7 @@ $ cd $HOME
 
 #### Install the clang compiler
 ```
-$ sudo apt-get install clang-10 --install-suggests
-
-sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-10 100
-
-sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-10 100
+$ sudo apt-get install clang
 ```
 
 #### Modify the PyTorch code
