@@ -1,7 +1,7 @@
-# PyTorch
+# PyTorch / Torchvision
 
 ## Installation by wheel
-***python3.9.x and PyTorch 1.9.0*** - wheel is only built for this environment. If you are using a different version of python and or need a different PyTorch version please follow the directions below on ***Installation from scratch***.
+***python3.9.x - PyTorch 1.9.0 and TorchVision 0.10.0*** - wheel(s) is only built for this environment. If you are using a different version of python and or need a different PyTorch version please follow the directions below on ***Installation from scratch***.
 
 Jetpack 4.6.1 Python 3.6.x howto see - https://qengineering.eu/install-pytorch-on-jetson-nano.html
 
@@ -32,23 +32,34 @@ $ sudo -H python3 -m pip install gdown
 ```
 $ cd $HOME
 ```
-#### Download the wheel
+#### Download the wheels
 ```
+$ gdown https://drive.google.com/file/d/1iIdxivXb6AhnW7i9AUb2J7YN9jwORC5G/view?usp=sharing
 $ gdown https://drive.google.com/file/d/1iIdxivXb6AhnW7i9AUb2J7YN9jwORC5G/view?usp=sharing
 ```
 #### Install PyTorch 1.9.0 for python 3.9.x
 ```
 $ sudo -H python3 -m pip install torch-1.9.0a0+gitd69c22d-cp39-cp39-linux_aarch64.whl
 ```
+#### Install Torchvision 0.10.0 for python 3.9.x
+```
+$ sudo -H python3 -m pip install torch-1.9.0a0+gitd69c22d-cp39-cp39-linux_aarch64.whl
+```
 #### Check that it installed correctly
+Pytorch
 ```
 $ python3 -c 'import torch as tf; print(tf.__version__)'
 $ python3 -c 'import torch as tf; print(tf.rand(5,4))'
 $ python3 -c 'import torch as tf; print(tf.hypot(tf.tensor([1.]),tf.tensor([1.])))'
 ```
+Torchvision
+```
+$ python3 -c 'import torchvision as tv; print(tv.__version__)'
+```
 
 #### Clean up
 ```
+$ rm torch-1.9.0a0+gitd69c22d-cp39-cp39-linux_aarch64.whl
 $ rm torch-1.9.0a0+gitd69c22d-cp39-cp39-linux_aarch64.whl
 ```
 <br>
@@ -64,9 +75,10 @@ $ sudo apt update
 
 #### Dependencies
 ```
-$ sudo apt install ninja-build git cmake
-$ sudo apt install libjpeg-dev libopenmpi-dev libomp-dev ccache
-$ sudo apt install libopenblas-dev libblas-dev libeigen3-dev nano
+$ sudo apt install llvm lzma liblzma-dev zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev -y
+$ sudo apt install ninja-build git cmake -y
+$ sudo apt install libjpeg-dev libopenmpi-dev libomp-dev ccache -y
+$ sudo apt install libopenblas-dev libblas-dev libeigen3-dev nano -y
 ```
 > Altinstall of python - If you have another version of python installed and its not set to exec using python3 but rather its full ver name like python3.9 then change it to that name instead of python3.
 ```
