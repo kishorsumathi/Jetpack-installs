@@ -151,9 +151,9 @@ $ nano ./aten/src/ATen/cpu/vec256/vec256_float_neon.h
 $ nano ./aten/src/ATen/cpu/vec/vec256/vec256_float_neon.h
 ```
 
-![image.jpg](./01nano.jpg )
-
 Around line 28 add ``#if defined(__clang__) ||(__GNUC__ > 8 || (__GNUC__ == 8 && __GNUC_MINOR__ > 3))`` and the matching closure `#endif`
+
+![image.jpg](./01nano.jpg )
 
 CTRL+X to save changes and exit nano
 
@@ -163,6 +163,8 @@ $ nano ./aten/src/ATen/cuda/CUDAContext.cpp
 ```
 Around line 24 add an extra line `device_prop.maxThreadsPerBlock = device_prop.maxThreadsPerBlock / 2;`
 
+![image.jpg](./02nano.jpg )
+
 CTRL+X to save changes and exit nano
 
 ***1.9.0 & 1.10.0***
@@ -171,6 +173,8 @@ $ nano ./aten/src/ATen/cuda/detail/KernelUtils.h
 ```
 In line 26 change the constant from 1024 to 512.
 
+![image.jpg](./03nano.jpg )
+
 CTRL+X to save changes and exit nano
 
 ***1.9.0 Only. Not needed for 1.10.0***
@@ -178,6 +182,8 @@ CTRL+X to save changes and exit nano
 $ nano ./aten/src/THCUNN/common.h
 ```
 In line 22 the same modification, change the CUDA_NUM_THREADS from 1024 to 512
+
+![image.jpg](./04nano.jpg )
 
 CTRL+X to save changes and exit nano
 
