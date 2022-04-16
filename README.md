@@ -17,6 +17,8 @@ This will show you how to install openCV to a altinstall of python or your defau
 
 ### PyTorch
 
-[Install PyTorch 1.9.0 or other PyTorch version](./PyTorch/PyTorch.MD)
+NOT READY YET!!!! DONT USE!!!!!
+
+[Install PyTorch 1.9.0 or other PyTorch version](./holding/PyTorch/PyTorch.MD)
 
 This will show you how to install PyTorch to a altinstall of python or your default Python3 that came with jetpack.
