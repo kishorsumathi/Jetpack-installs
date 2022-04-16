@@ -253,6 +253,10 @@ Remove pytorch directory
 ```
 $ rm -rf pytorch
 ```
+#### Caffe2 - update protobuff
+```
+$ sudo -H python3 -m pip install protobuf
+```
 
 #### Remove the dphys-swapfile now
 Note: if your going to be building other stuff like Torch or TorchVision leave the swap your going to need it.
@@ -261,6 +265,73 @@ $ sudo /etc/init.d/dphys-swapfile stop
 $ sudo apt-get remove --purge dphys-swapfile
 ```
 
+
+
+
+### Torchvision
+
+#### Make sure your in your home directory
+```
+$ cd $HOME
+```
+
+#### Download Torchvision
+
+```
+git clone https://github.com/pytorch/vision.git
+```
+#### Enter directory
+```
+cd vision
+```
+
+#### checkout v0.11.3
+Main Branch has issues with Atomic.cuh
+```
+git checkout tags/v0.11.3
+```
+#### Torchvision requirements.txt
+```
+nano version.txt
+```
+change version to 0.10.0
+
+CTRL+X to save changes and exit nano
+
+#### Start the build
+Altinstall of python - If you have another version of python installed and its not set to exec using python3 but rather its full ver name like python3.9 then change it to that name instead of python3.
+```
+$ python3 setup.py bdist_wheel
+```
+#### install the wheel found in the dist folder
+```
+$ cd dist
+$ ls
+$ sudo -H python3 -m pip install torchvision-0.10.0+05eae32-cp39-cp39-linux_aarch64.whl
+```
+
+#### Check that it installed correctly
+```
+$ python3 -c 'import torchvision as tv; print(tv.__version__)'
+```
+
+#### Cleanup
+Make sure your in your home directory
+```
+$ cd $HOME
+```
+
+Remove vision directory
+```
+$ rm -rf vision
+```
+
+#### Remove the dphys-swapfile now
+
+```
+$ sudo /etc/init.d/dphys-swapfile stop
+$ sudo apt-get remove --purge dphys-swapfile
+```
 
 
 
