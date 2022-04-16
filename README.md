@@ -6,7 +6,7 @@ Currently this howto assumes you have ***Jetpack 4.6.1*** installed. This may wo
 ### Cmake
 [Install Cmake 3.23.1](./cmake/cmake.MD)
 
-Recomended that you upgrade cmake before installing python, but you will need this if you install onnxruntime-gpu
+Recomended that you upgrade cmake before installing python, You will need CMake 3.23.1 if you later need to install onnxruntime-gpu
 
 ### Python
 
