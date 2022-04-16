@@ -44,7 +44,7 @@ $ cmake --version
 
 #### Cleanup
 ```
-$ sudo $HOME
+$ cd $HOME
 $ rm -rf cmake-3.23.1
 $ rm cmake-3.23.1.tar.gz
 ```
