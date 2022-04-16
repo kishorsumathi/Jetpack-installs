@@ -142,9 +142,10 @@ after reboot check that you now have enough memory
 ```
 $ free -m
 ```
-Make sure your in your home directory
+Make sure your in  directory after swap
 ```
 $ cd $HOME
+$ cd pytorch
 ```
 
 #### Install the clang compiler
