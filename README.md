@@ -17,10 +17,10 @@ This will show you how to altinstall a python version, so to not replace your de
 ### openCV
 [Install openCV 4.5.5 or other openCV version](./openCV/openCV.MD)
 
-This will show you how to install openCV to a altinstall of python or your default Python3 that came with jetpack.
+This will show you how to install openCV to a altinstall of python.
 
-### PyTorch
+### PyTorch & Torchvision
 
 [Install PyTorch 1.9.0 or other PyTorch version](./PyTorch/PyTorch.MD)
 
-This will show you how to install PyTorch to a altinstall of python or your default Python3 that came with jetpack.
+This will show you how to install PyTorch and Torchvision to a altinstall of python.
