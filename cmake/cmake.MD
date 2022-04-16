@@ -38,11 +38,15 @@ $ sudo make install
 ```
 
 ### check version
+```
 $ cmake --version
+```
 
 #### Cleanup
+```
 $ sudo $HOME
 $ rm -rf cmake-3.23.1
 $ rm cmake-3.23.1.tar.gz
+```
 
 ###### END OF DOCUMENT
