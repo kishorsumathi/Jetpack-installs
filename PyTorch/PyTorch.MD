@@ -163,11 +163,6 @@ set clang compiler
 $ export CC=clang
 $ export CXX=clang++
 ```
-create symlink to cublas
-If you get a warning that it exists thats fine.
-```
-sudo ln -s /usr/local/cuda-10.2/targets/aarch64-linux/lib/libcublas.so /usr/local/cuda/lib64/libcublas.so
-```
 
 #### Start the build
 Altinstall of python - If you have another version of python installed and its not set to exec using python3 but rather its full ver name like python3.9 then change it to that name instead of python3.
