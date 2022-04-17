@@ -166,7 +166,7 @@ $ export CXX=clang++
 create symlink to cublas
 If you get a warning that it exists thats fine.
 ```
-sudo ln -sf /usr/local/cuda-10.2/targets/aarch64-linux/lib/libcublas.so /usr/local/cuda/lib64/libcublas.so
+sudo ln -s /usr/local/cuda-10.2/targets/aarch64-linux/lib/libcublas.so /usr/local/cuda/lib64/libcublas.so
 ```
 
 #### Start the build
