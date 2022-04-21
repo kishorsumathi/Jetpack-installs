@@ -236,7 +236,8 @@ git checkout tags/v0.11.3
 ```
 nano version.txt
 ```
-change version to 0.10.0
+change version to ***0.10.0*** if you installed pytorch 1.9.0 
+change version to ***0.11.0*** if you installed pytorch 1.10.0 
 
 CTRL+X to save changes and exit nano
 
